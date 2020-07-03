@@ -1,0 +1,21 @@
+{
+    "type": "Feature",
+    "id": "mapa_departamento_paraguay_simply.fid--233c48c2_1514ab09110_-68a0",
+    "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [
+                [
+                    [0, 0]
+                ]
+            ]
+        ]
+    },
+    "geometry_name": "geom",
+    "properties": {
+        "gid": 18,
+        "id": 0,
+        "dpto": "18",
+        "dpto_desc": "Maine"
+    }
+}

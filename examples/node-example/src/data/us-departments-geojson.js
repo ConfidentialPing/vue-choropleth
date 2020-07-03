@@ -1,6 +1,6 @@
-{
+export var geojson = {
     "type": "FeatureCollection",
-    "totalFeatures": 18,
+    "totalFeatures": 56,
     "features": [{
         "type": "Feature",
         "id": "mapa_departamento_paraguay_simply.fid--233c48c2_1514ab09110_-68b1",
@@ -9841,7 +9841,7 @@
             "gid": 11,
             "id": 0,
             "dpto": "16",
-            "dpto_desc": "BOQUERON"
+            "dpto_desc": "idaho"
         }
     }, {
         "type": "Feature",
@@ -18081,7 +18081,29 @@
             "dpto": "17",
             "dpto_desc": "ALTO PARAGUAY"
         }
-    }],
+    },
+    {
+        "type": "Feature",
+        "id": "mapa_departamento_paraguay_simply.fid--233c48c2_1514ab09110_-68a0",
+        "geometry": {
+            "type": "MultiPolygon",
+            "coordinates": [
+                [
+                    [
+                        [0, 0]
+                    ]
+                ]
+            ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+            "gid": 18,
+            "id": 0,
+            "dpto": "23",
+            "dpto_desc": "Maine"
+        }
+    }
+    ],
     "crs": {
         "type": "name",
         "properties": {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <l-map :center="[-23.752961, -57.854357]" :zoom="6" style="height: 500px;" :options="mapOptions">
+    <l-map :center="[52, -98.5795]" :zoom="3" style="height: 500px;" :options="mapOptions">
       <l-choropleth-layer :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="paraguayGeojson" :colorScale="colorScale">
         <template slot-scope="props">
           <l-info-control :item="props.currentItem" :unit="props.unit" title="Department" placeholder="Hover over a department"/>
@@ -14,9 +14,9 @@
 <script>
 import { InfoControl, ReferenceChart, ChoroplethLayer } from 'vue-choropleth'
 
-import { geojson } from './data/py-departments-geojson'
-import paraguayGeojson from './data/paraguay.json'
-import { pyDepartmentsData } from './data/py-departments-data'
+import { geojson } from './data/us-departments-geojson-4'
+import paraguayGeojson from './data/usa-4.json'
+import { pyDepartmentsData } from './data/us-departments-data-4'
 import {LMap} from 'vue2-leaflet';
 
 export default {
@@ -31,14 +31,14 @@ export default {
     return {
       pyDepartmentsData,
       paraguayGeojson,
-      colorScale: ["e7d090", "e9ae7b", "de7062"],
+      colorScale: ["FFFF00","00FF80", "0000FF"],
       value: {
-        key: "amount_w",
-        metric: "% girls"
-      },
-      extraValues: [{
         key: "amount_m",
         metric: "% boys"
+      },
+      extraValues: [{
+        key: "amount_w",
+        metric: "% girls"
       }],
       mapOptions: {
         attributionControl: false
